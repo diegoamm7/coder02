@@ -4,133 +4,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--------------CSS------------------------->
-    
-    <link rel="stylesheet" href="CSS/style.css">
-    
-    <!------------------------------------------>
-
     <title>CineGo</title>
-    <link rel="shortcut icon" href="imagenes/logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container relative flex flex-col mx-auto">
-    <header class="carusel">
     
-        <div class="img">
-    
-        <!--la idea es colocar un carrusel -->
-
-        <img src="imagenes/ready.jpg" width="1024" height="450" >
-    
-        </div>
-            <h1>CineGo</h1>
-
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/ready.jpg" class=" img-fluid"  alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/banner2.jpg" class="img-fluid" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/banner3.jpg" class="img-fluid" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </header>
-    
-<div class="menu-container">
-    <nav class="menu">
 
-            <ol><a href="index.html">Home</a></ol>
-            <ol><a href="ranking/ranking.html">Ranking</a></ol>
-            <ol><a href="estrenos/estrenos.html">Estrenos</a></ol>
-            <ol><a href="contacto/contacto.html">Contacto</a></ol>
-            <ol><a href="galeria/galeria.html">Galeria</a></ol>
-
-        
-
-            <!--Quiero agregar un buscador, voy a investigar por mi cuenta esta bueno que el profe enseñe como-->
-        
-
-    </nav>
-</div>
-        <!--quiero colocar unos logos a la parte izquierda de la pagina, y que se muevan a medida que vaya bajando, por ahora lo voy a hacer con el aside-->
-
-        <aside>
-
-            <img src="imagenes/jurassic.png"width="70" height="60" >
-            <img src="imagenes/marvel.png"  width="70" height="60">
-            <img src="imagenes/warner.png"  width="70" height="60">
-            <img src="imagenes/batman.png"  width="70" height="60">
-            <img src="imagenes/star.png"    width="70" height="60">
-
-        </aside>
-
-
-        <!--------------------------------------------------------------------------------------------------------------->
-    
-
-    <main>
-
-
-        <section class="container">
-            <div>
-                
-                <div class="item-absolute">
-                    
-                    <img src="imagenes/poster.jpg" width="350" height="450" >
-                        
-                        <h2>Spider Man - No Way Home</h2>
-                            <br>
-                        <p>Por primera vez en la historia cinematográfica de Spider- Man, nuestro amistoso héroe y vecino es desenmascarado, 
-                            y ya no puede separar su vida normal de los altos riesgos de ser un súper héroe. Cuando pide ayuda al Doctor Strange, 
-                            estos riesgos se vuelven más peligrosos, forzándolo a descubrir lo que realmente significa ser Spider-Man.
-                        </p>
-                </div>
-        
-            </div>
-        </section>
-
-        <!---------------------------------------------------------------------------------------------------------------->
-
-
-        <section class="container">
-            <div>
-                
-                <div class="item-absolute2"> 
-                    
-                    <img src="imagenes/matrix.jpg" width="350" height="450">
-                    
-                        <h2>The Matrix Resurrections</h2>
-                                <br>
-                            <p> De la cineasta visionaria Lana Wachowski llega "Matrix Resurrecciones", 
-                                la tan esperada cuarta película de la innovadora franquicia que redefinió un género. 
-                                La nueva película reúne a las estrellas originales Keanu Reeves y Carrie-Anne Moss en los papeles icónicos que hicieron famosos, Neo y Trinity.
-                            </p>
-                </div>
-        
-            </div>
-        
-        </section>
-
-    </main>
-
-
-<!---------------------------------------------------------------------------------------------------------------->
-
-
-
-    <div>
-        
-        <footer class="footer">
-            
-        
-                <p>Pagina sin fines de lucro ni comerciales.</p>
-                <p>Copyright Diego Moncada©.</p>
-        
+        <nav class="menu">
                 <ul>
-                    <a href="https://www.facebook.com">Facebook</a>
-                    <a href="https://www.instagram.com">Instagram</a>
-                    <a href="https://www.youtube.com">Youtube</a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ranking/ranking.html">Ranking</a></li>
+                    <li><a href="estrenos/estrenos.html">Estrenos</a></li>
+                    <li><a href="contacto/contacto.html">Contacto</a></li>
+                    <li><a href="galeria/galeria.html">Galeria</a></li>
                 </ul>
+        </nav>
+
+
+
+        <div class="row">
+                <aside>
+                    <h2>aside</h2>
+                </aside>
+            
+
+
+
+            <section>
+            
+
+
+
+                    <div>
+                        
+                        <div class="publi1">
+                            
+                            <img src="imagenes/poster.jpg" width="350" height="450" >
+                                <br>
+                             
+                                <h4>Spider Man - No Way Home</h4>
+                                 
+                                
+                        </div>
+                
+                    </div>
+        
+        
+                <!---------------------------------------------------------------------------------------------------------------->
+        
+        
+        
+                    <div>
+                        
+                        <div class="publi2"> 
+                            
+                            <img src="imagenes/matrix.jpg" width="350" height="450">
+                            
+                                <h4>The Matrix Resurrections</h4>
+                                    
+                                    
+                        </div>
+                
+                    </div>
+
+                    <div>
+                        
+                        <div class="publi3"> 
+                            
+                            <img src="imagenes/thebatman.jpg" width="350" height="450">
+                            
+                                <h4>The Batman</h4>
+                                    
+                                    
+                        </div>
+                
+                    </div>
+                
+                    <div>
+                        
+                        <div class="publi4"> 
+                            
+                            <img src="imagenes/jurassicw.png" width="350" height="450">
+                            
+                                <h4>Jurassic</h4>
+                                     
+                                    
+                        </div>
+                
+                    </div>
+
+                    <div>
+                        
+                        <div class="publi5"> 
+                            
+                            <img src="imagenes/luigui.jpg" width="350" height="450">
+                            
+                                <h4>luigui</h4>
+                                      
+                                    
+                        </div>
+                
+                    </div>
+<br><br><br>
+                    <div>
+                        
+                        <div class="publi6"> 
+                            
+                            <img src="imagenes/buz.jpg" width="350" height="450">
+                            
+                                <h4>Buz</h4>
+                                     
+                                    
+                        </div>
+                
+                    </div>
+         
+        
+            
+                </section>
+            </div>
+        
+        <!---------------------------------------------------------------------------------------------------------------->
+        
+        
+        
+        
+
+        <footer>
+            <p>Pagina sin fines de lucro ni comerciales.</p>
+            <p>Copyright Diego Moncada©.</p>
+    
+           
+                <a href="https://www.facebook.com">Facebook</a>
+                
+                <a href="https://www.instagram.com">Instagram</a>
+                
+                <a href="https://www.youtube.com">Youtube</a>
+             
         </footer>
-        
 
-        
-
-    </div>
-
-</div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

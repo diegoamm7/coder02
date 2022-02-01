@@ -1,86 +1,107 @@
 
-*{
+body{
+    background: black;
+    font-family: Arial, Helvetica;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
-body{
-    background-color: #2b806a ;
+header{
 
+    padding: 50px;
+    background-color: rgb(0, 0, 0);
     text-align: center;
     
 }
 
-.flex-col {
-    flex-direction: column;
-}
 
 
-p{
-    color: white;
-}
+nav{
 
-.carusel{
-    justify-content: center;
-
-}
-.menu-container{
-    color: #2c2c2c;
-    background-color: rgb(255, 255, 255);
-    padding: 20px  ;
     display: flex;
+    flex-direction: row;
+    background-color: rgb(41, 21, 21);
     justify-content: right;
-
+    padding: 15px;
+    
+    
 }
 
-.menu{
-    width: 25%;
+ul{
+    width: 400px;
     display: flex;
-    justify-content: space-around;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 80px;
+    
+
 }
 
+a{
+    text-decoration: none;
+    color: #fff8f8;
+    font-size: 20px;
+    justify-content: space-between;
+    display: inline-block;
 
+    
+}
 
-h1{
-    background-color: #2c2c2c;
-    padding: 45px 100px;
-    text-align: center;
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside{
+    flex: 30px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
     color: white;
-    border: 1.5px solid #2c2c2c;
-
-    margin-bottom: 50px;
 }
 
-.item-absolute{
-    position: absolute;
-    top: 850px;
-    left: 250px;
-    right: 0;
-    width: 400px;
-    height: 600px;
+section{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 70%;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    color: white;
     
-    
+    }
+
+.publi1{
+    box-shadow: rgb(114, 56, 56) 3px 3px 5px 5px;
 }
 
-.item-absolute2 {
-    position: absolute;
-    top: 850px;
-    left: 800px;
-    right: 0;
-    width: 400px;
-    height: 600px;
-    right: 700px;
-    
-    
+.publi2{
+    box-shadow: rgb(114, 56, 56) 3px 3px 5px 5px;
+}
+.publi3{
+    box-shadow: rgb(114, 56, 56) 3px 3px 5px 5px;
+}
+.publi4{
+    box-shadow: rgb(114, 56, 56) 3px 3px 5px 5px;
+}
+.publi5{
+    box-shadow: rgb(114, 56, 56) 3px 3px 5px 5px;
+}
+.publi6{
+    box-shadow: rgb(114, 56, 56) 3px 3px 5px 5px;
 }
 
+footer{
+        padding: 5px;
+        text-align: center;
+        background-color: rgb(41, 21, 21);
+        height: 120px;
+        color: white;
+    }
 
-.footer{
-    background-color: #2c2c2c;
-    text-align: center;
-    width:100%;
-    position: absolute;
-    margin-top: 800px;
-    
-
+@media screen and (max-width: 700px){
+    nav, ul, .row{
+        flex-direction: column;
+    }
 }
