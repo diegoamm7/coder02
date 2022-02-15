@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
     <!--------------CSS------------------------->
     
@@ -15,65 +17,89 @@
 
     <header>
            <h1>Ranking</h1>
-            <img src="../imagenes/estrellas.png" width="70" height="60">
+            <img src="../imagenes/estrellas.png" width="400" height="200">
         <!--quiero agregar unos iconos de estrellas -->
     </header>
     
 
-    <div class="menu-container">
-        <nav class="menu">
     
-                <ol><a href="../index.html">Home</a></ol>
-                <ol><a href="../ranking/ranking.html">Ranking</a></ol>
-                <ol><a href="../estrenos/estrenos.html">Estrenos</a></ol>
-                <ol><a href="../contacto/contacto.html">Contacto</a></ol>
-                <ol><a href="../galeria/galeria.html">Galeria</a></ol>
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../ranking/ranking.html">Ranking</a></li>
+            <li><a href="../estrenos/estrenos.html">Estrenos</a></li>
+            <li><a href="../contacto/contacto.html">Contacto</a></li>
+            <li><a href="../galeria/galeria.html">Galeria</a></li>
+        </ul>
+</nav>
     
-            
-    
-                <!--Quiero agregar un buscador, voy a investigar por mi cuenta esta bueno que el profe enseñe como-->
-            
-    
-        </nav>
-    </div>
 
         <!--quiero colocar unos logos a la parte izquierda de la pagina, y que se muevan a medida que vaya bajando, por ahora lo voy a hacer con el aside-->
 
-        <aside>
+        
+        <div class="row">
+            <aside>
+                <section class="container-circle">
+                    <div class="circle1"><img src="../imagenes/warner.png" alt="logo WarnerBros" width="150px" height="150px"></div>
+                    <div class="circle2"><img src="../imagenes/marvel.png" alt="logo Marvel" width="150px" height="150px"></div>
+                    <div class="circle3"><img src="../imagenes/star.png" alt="logo StarWars" width="150px" height="150px"></div>
+                    <div class="circle4"><img src="../imagenes/batman.png" alt="logo batman" width="150px" height="150px"></div>
+                </section>
+            </aside>
+        
 
-            <img src="../imagenes/jurassic.png"width="70" height="60" >
-            <img src="../imagenes/marvel.png"  width="70" height="60">
-            <img src="../imagenes/warner.png"  width="70" height="60">
-            <img src="../imagenes/batman.png"  width="70" height="60">
-            <img src="../imagenes/star.png"    width="70" height="60">
 
-        </aside>
 
-        <main>
+        <section>
 
-            
-            <section>
-                <article>
+        
+
+            <div>
+                        
+                <div class="publi1">
+                    
                     <img src="../imagenes/poster.jpg" width="350" height="450" >
-                    <h2>Spider Man - No Way Home</h2>
-                    <!----quiero colocar estrellas calificatorias de las pelis, asignadas por la critica-->
-                </article>
-    
-            </section>
-    
-            <!---------------------------------------------------------------------------------------------------------------->
-    
-    
-            <section>
-                <article>
-                    <img src="../imagenes/matrix.jpg" width="350" height="450">
-                    <h2>The Matrix Resurrections</h2>
-                    <!----quiero colocar estrellas calificatorias de las pelis, asignadas por la critica-->
-                </article>
-    
-            </section>
+                        <br>
+                     
+                        <h4>Spider Man - No Way Home</h4>
+                         
+                        
+                </div>
+        
+            </div>
 
-        </main>
+
+        <!---------------------------------------------------------------------------------------------------------------->
+
+
+
+            <div>
+                
+                <div class="publi2"> 
+                    
+                    <img src="../imagenes/matrix.jpg" width="350" height="450">
+                    
+                        <h4>The Matrix Resurrections</h4>
+                            
+                            
+                </div>
+        
+            </div>
+
+            <div>
+                
+                <div class="publi3"> 
+                    
+                    <img src="../imagenes/thebatman.jpg" width="350" height="450">
+                    
+                        <h4>The Batman</h4>
+                            
+                            
+                </div>
+        
+            </div>
+        
+        </section>
 
             <!---------------------------------------------------------------------------------------------------------------->
 
@@ -96,9 +122,9 @@
             
     
         </div>
+    </div>
 
-
-
-    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
