@@ -7,13 +7,14 @@ body{
     font-family: Arial, Helvetica;
     text-align: center;
     -webkit-font-smoothing: antialiased;
+    border: #121212 25px 0px 0px 0px;
     
     
 }
 
 header{
 
-    padding: 60px;
+    padding: 10px;
     text-align: center;
     color: #fff8f8;
     
@@ -28,8 +29,9 @@ nav{
     flex-direction: row;
     background-color: rgb(41, 21, 21);
     justify-content: right;
-    padding: 15px;
+    padding: 25px;
     
+
     
 }
 
@@ -55,7 +57,7 @@ a{
 .row{
     display: flex;
     flex-wrap: wrap;
-    
+    padding: 150px;
 }
 
 aside{
